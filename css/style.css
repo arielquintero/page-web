@@ -73,7 +73,7 @@ body {
         width: 100%;
         background: linear-gradient(to left, rgb(28, 43, 73), #647daf);
         display: grid;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         text-align: center;
         grid-template-rows: repeat(2, 1fr);
     }
