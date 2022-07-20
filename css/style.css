@@ -1,0 +1,428 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins";
+    max-width: 1920px;
+}
+
+#index {
+    background-image: url(/img/home.jpg);
+}
+#nosotros {
+    background-image: url(/img/nosotros.jpg);
+}
+#recursos {
+    background-image: url(/img/recursos.jpg);
+}
+#clientes {
+    background-image: url(/img/clientes.png);
+}
+#formulario {
+    background-image: url(/img/formulario.jpg);
+}
+
+/* MEDIA QUERIES DESKTOP PAR PANTALLAS MAYORES DE 551px*/
+@media only screen and (min-width: 1221px) {
+    .contenedor {
+        width: 100%;
+        height: 90px;
+    }
+}
+
+@media only screen and (min-width: 733px) and (max-width: 1220px) {
+    .contenedor {
+        width: 100%;
+        height: 25vh;
+    }
+    nav .iconsNav {
+        margin-left: 5px;
+    }
+
+    footer .box {
+        font-size: small;
+    }
+}
+
+/* MEDIA QUERIES  MOBILE*/
+@media only screen and (max-width: 732px) {
+    #index,
+    #nosotros,
+    #recursos,
+    #clientes,
+    #formulario {
+        background: linear-gradient(to right, #4b6cb7, #182848);
+        /* background: linear-gradient(to left, rgb(28, 43, 73), #647daf); */
+    }
+
+    /* HEADER */
+
+    /* NAV */
+    .contenedor {
+        margin: 0 auto;
+        height: 100px;
+        overflow: hidden;
+        position: relative;
+    }
+    .nav {
+        /* background:rgb(37, 92, 129); */
+        width: 100%;
+        background: linear-gradient(to left, rgb(28, 43, 73), #647daf);
+        display: grid;
+        justify-content: space-between;
+        text-align: center;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .nav .navLogo {
+        font-size: 2em;
+        font-weight: bold;
+        margin-left: 5%;
+        z-index: 1;
+    }
+
+    .nav ul {
+        /* position: absolute; */
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+        /* display: grid; */
+        /* grid-auto-flow: row; */
+        text-align: end;
+        padding-right: 1%;
+        gap: 1em;
+        margin-right: 2%;
+        /* display: none; */
+    }
+
+    .nav ul .first {
+        font-size: 1rem;
+    }
+
+    /* #footerIndex .box, .coder {
+      font-size: 1em; */
+
+    /* #footerIndex .coder {
+      text-transform: none;
+    } */
+    nav .navLink {
+        display: none;
+    }
+    nav .iconsNav {
+        display: inline-block;
+        width: 100%;
+        line-height: 30px;
+        cursor: pointer;
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+
+        gap: 5em;
+        padding: 0;
+        margin-left: 5px;
+        color: #fff;
+    }
+
+    footer .box {
+        /* visibility: hidden; */
+        display: none;
+    }
+
+    footer .iconsFooter {
+        display: inline-block;
+        /* line-height: 50px; */
+        cursor: pointer;
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        gap: 10em;
+        margin-left: 5px;
+    }
+}
+
+/* ---------------------------------------------------- */
+
+/* NAV */
+.iconsNav {
+    display: none;
+}
+
+.first {
+    text-decoration: none;
+}
+
+.navLink .second,
+.coder {
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: rgb(189, 151, 108);
+}
+
+.nav {
+    background: linear-gradient(to left, rgb(28, 43, 73), #647daf);
+}
+
+.navLogo {
+    float: left;
+    padding-top: 1.5%;
+    margin-left: 3%;
+    font-size: 2em;
+    font-weight: 500;
+    color: #fff;
+}
+
+ul {
+    margin-top: 1%;
+    padding-top: auto;
+    float: right;
+}
+
+li {
+    display: inline-block;
+    padding: 25px;
+}
+
+.nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MAIN */
+
+main {
+    /* background: url(/img/internet-1.jpg); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    padding: 25vh 0;
+}
+
+/* INDEX */
+
+.sectionA,
+.sectionC,
+.sectionD {
+    width: 50%;
+    margin-left: 10%;
+}
+
+.index,
+.nosotros,
+.recursosA,
+.clientes,
+.formulario {
+    text-align: start;
+    font-size: 10vh;
+    font-family: Lora;
+    font-weight: 600;
+    color: #185669;
+    text-shadow: 1px 1px #c5c3c0;
+}
+
+.primario p,
+.secundario p {
+    margin: 8% 0 8% 0;
+    color: #185669;
+    text-shadow: 1px 1px #c5c3c0;
+    font-size: 3.5vh;
+    font-family: Lora;
+    font-weight: 400;
+}
+
+.secundario h2,
+.recursosB {
+    margin-top: 2%;
+    text-align: start;
+    color: #185669;
+    text-shadow: 1px 1px #c5c3c0;
+    font-size: 6vh;
+    font-family: Lora;
+}
+
+.terceario h3,
+.producto h3 {
+    text-align: start;
+    color: #185669;
+    text-shadow: 1px 1px #c5c3c0;
+    font-size: 25px;
+    font-family: Lora;
+    margin: 10% 0 8% 0;
+}
+
+.terceario a,
+.producto a {
+    color: #ffffff;
+    background-color: #255c81;
+    padding: 10px 10px;
+    border: 0.5px solid rgb(37, 92, 129);
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 10%;
+    max-width: 1920px;
+    background: linear-gradient(to left, rgb(28, 43, 73), #647daf);
+    color: #fff;
+}
+.coder {
+    text-decoration: none;
+}
+
+.iconsFooter {
+    display: none;
+}
+
+.box {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    padding: 15px 0;
+}
+
+/* #footerIndex .cajaA {
+    float: left;
+    margin-left: 2rem;
+    text-align: center;
+} */
+/* #footerIndex .cajaB, .cajaC {
+    float: left;
+    margin-left: 15rem;
+    text-align: center;
+} */
+/* #footerIndex .cajaC {
+    float: left;
+    margin-left: 15rem;
+    text-align: center;
+} */
+/* #footerIndex .cajaD {
+    float: right;
+    margin-top: 1rem;
+} */
+
+/* NOSOTROS */
+
+.nosotros,
+.recursosA,
+.recursosB,
+.clientes,
+.formulario {
+    text-align: center;
+    margin-bottom: 5%;
+}
+.section {
+    display: inline-table;
+    padding: 1%;
+    width: 35%;
+    margin-left: 10%;
+}
+
+.section h2,
+.sectionD h2 {
+    color: #185669;
+    text-shadow: 1px 1px #c5c3c0;
+    font-size: 25px;
+    font-family: Lora;
+    margin-bottom: 5%;
+}
+
+.section p,
+.producto p,
+.sectionD p {
+    margin: 8% 0 8% 0;
+    color: #185669;
+    text-shadow: 1px 1px #c5c3c0;
+    font-size: 2.5vh;
+    font-family: Lora;
+}
+
+/* RECURSOS */
+.producto {
+    display: inline-table;
+    width: 35%;
+    margin-left: 10%;
+}
+
+.producto a {
+    float: right;
+    margin-right: 5%;
+}
+
+/* CLIENTES */
+
+.cliente {
+    margin-bottom: 5%;
+}
+
+/* CONTACTO */
+
+.form {
+    margin-left: 10%;
+}
+fieldset {
+    border-style: none;
+}
+legend {
+    text-align: start;
+    color: #185669;
+    text-shadow: 1px 1px #c5c3c0;
+    font-size: 25px;
+    font-family: Lora;
+}
+
+.select {
+    margin: 2% 0;
+    font-size: 2.5vh;
+    color: #fff;
+    background-color: transparent;
+    font-family: Lora;
+    font-weight: bold;
+}
+
+table td {
+    margin: 10% 0;
+    font-size: 2.5vh;
+    color: #fff;
+    font-family: Lora;
+    font-weight: bold;
+}
+label {
+    display: block;
+    margin-top: 4%;
+}
+input,
+textarea {
+    font-family: Lora;
+    font-weight: bold;
+    color: #fff;
+    margin: 2% 0 2% 0;
+    opacity: 0.3;
+}
+
+form a,
+.enviar,
+.limpiar {
+    font-family: Lora;
+    font-size: small;
+    font-weight: bold;
+    color: #fff;
+    background-color: #255c81;
+    padding: 2px 2px;
+    border: 0.5px solid rgb(37, 92, 129);
+    margin: 0.2%;
+}

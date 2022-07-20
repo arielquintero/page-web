@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>formulario</title>
+      <link rel="stylesheet" href="/css/style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+          rel="stylesheet"
+      />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+          href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap"
+          rel="stylesheet"
+      />
+      <script
+          src="https://kit.fontawesome.com/4db3f232fb.js"
+          crossorigin="anonymous"
+      ></script>
+    </head>
+    <body>
+        <header>
+          <nav class="nav contenedor">
+            <div class="navLogo">
+                <span>Construimos el Futuro</span>
+            </div>
+            <div class="navLink">
+                        <ul>
+                            <li><a class="first" href="../index.html">Home</a></li>
+                            <li><a class="first" href="nosotros.html">Nosotros</a></li>
+                            <li><a class="first" href="recursos.html">Recursos</a></li>
+                            <li>
+                                <a class="first" href="cliente.html">Nuestros Clientes</a>
+                                <li>
+                                  <a class="first second" href="formulario.html">Contactanos</a>
+                              </li>
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="iconsNav">
+                        <i class="fa fa-home"></i>
+                        <i class="fa fa-briefcase"></i>
+                        <i class="fa fa-industry"></i>
+                        <i class="fa fa-user"></i>
+                        <i class="fa fa-envelope-open"></i>
+                      </div>
+                </nav>
+        </header>
+        <main id="formulario">
+            <div>
+                <h1 class="formulario">Ponete en contacto con nosotros</h1>
+            </div>
+            <form class="form">
+                <legend>Categorias</legend>
+                <select name="aplicacion" id="" class="select">
+                    <option value="industria">Industria 4.0</option>
+                    <option value="hogar">Domotica</option>
+                    <option value="campo">Agroindustria</option>
+                    <option value="logistica">Logistica</option>
+                </select>
+                <fieldset>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" />
+                            </td>
+                            <td>
+                                <label for="apellido">Apellido</label>
+                                <input type="text" id="apellido" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email">Email Corporativo</label>
+                                <input type="email" id="email" />
+                            </td>
+                            <td>
+                                <label for="telefono">Telefono</label>
+                                <input type="tel" id="telefono" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="rol">Rol</label>
+                                <input type="text" id="rol" />
+                            </td>
+                            <td>
+                                <label for="organizacion">Organizacion</label>
+                                <input type="tel" id="organizacion" />
+                            </td>
+                        </tr>
+                    </table>
+                    <textarea name="Mensage" id="" cols="35" rows="10">
+Mensage</textarea
+                    >
+                    <div>
+                        <input
+                            type="checkbox"
+                            name="acepta"
+                            id=""
+                            value="1"
+                        />Quiero recibir novedades</>
+                        
+                    </div>
+                    <div class="submit">
+                    <tr>
+                        <td>
+                            <!-- <input type="submit" />
+                            <input type="reset" /> -->
+                            <a class="enviar" href="">Enviar Consulta</a>
+                            <a class="limpiar" href="">Limpiar</a>
+                        </td>
+                    </tr>
+                  </div>
+                </fieldset>
+                <!-- <fieldset>
+        <legend>y contanos como podemos ayudarte.</legend>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre">
+        <br><br>
+        <label for="apellido">Apellido</label>
+        <input type="text">
+        <br><br>
+        <label for="empresa">Empresa</label>
+        <input type="text">
+        <br><br>
+        <label for="email">Correo Electronico</label>
+        <input type="email">
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+      </fieldset> -->
+            </form>
+        </main>
+    </body>
+    <footer id="footerIndex">
+      <div class="box">
+        <div>
+            <h3 class="">Telefono</h3>
+            <p>+54 0123 4567890</p>
+        </div>
+        <div>
+            <h3 class="">Email</h3>
+            <p>estoes@unemail.com.ar</p>
+        </div>
+        <div>
+            <h3 class="">Ubicacion</h3>
+            <p>Estamos Aca 1234</p>
+        </div>
+        <div class="enlace">
+            <p>Web hecha en<a class="coder" href="https://www.coderhouse.com" target="_blank">CoderHouse</a> | Ariel Design</p>
+        </div>
+      </div>
+      <div class="iconsFooter">
+        <i class="fa fa-phone"></i>
+        <i class="fa fa-at"></i>
+        <i class="fa fa-map"></i>
+      </div>
+    </footer>
+</html>
