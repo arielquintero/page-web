@@ -161,9 +161,12 @@ body {
 
 .navLink .second,
 .coder {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-transform: uppercase;
-    color: rgb(189, 151, 108);
+    color: rgb(252, 252, 252);
+}
+.coder {
+  color: rgb(173, 123, 31);
 }
 
 .nav {
@@ -195,7 +198,39 @@ li {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    position: relative;
+    z-index: 0;
 }
+
+/* ANIMACION NAV */
+
+.nav a:before,
+.nav a::after {
+  position:absolute;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background: #fff;
+  content: "";
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.nav a:before {
+  top: 0;
+  transform: translateY(10px);
+}
+.nav a:after {
+  bottom: 0;
+  transform: translateY(-10px);
+}
+
+.nav a:hover:before,
+.nav a:hover:after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* MAIN */
 
@@ -230,8 +265,18 @@ main {
     color: #185669;
     text-shadow: 1px 1px #c5c3c0;
 }
-.principal {
+/* ANIMACION SOLO INDEX */
+.principal,
+.subtitulo {
     text-align: left;
+}
+.principal:hover,
+.subtitulo:hover {
+    color: #1856695b;
+}
+.principal,
+.subtitulo {
+    transition: color 0.8s linear 0.2s;
 }
 
 .primario p,
@@ -362,6 +407,17 @@ footer {
     font-family: Lora;
 }
 
+/* ANIMATION */
+.section:hover .img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    
+}
+.section {
+    overflow: hidden;
+    
+}
+
 /* RECURSOS */
 .producto {
     display: inline-table;
@@ -436,7 +492,7 @@ label {
 form a,
 .enviar,
 .limpiar {
-  text-align: left;
+    text-align: left;
     font-family: Lora;
     font-size: small;
     font-weight: bold;
