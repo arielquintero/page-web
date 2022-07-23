@@ -10,19 +10,19 @@ body {
     max-width: 1920px;
 }
 
-#index {
+.home {
     background-image: url(/img/home.jpg);
 }
-#nosotros {
+.nosotros {
     background-image: url(/img/nosotros.jpg);
 }
-#recursos {
+.recursos {
     background-image: url(/img/recursos.jpg);
 }
-#clientes {
+.clientes {
     background-image: url(/img/clientes.png);
 }
-#formulario {
+.formulario {
     background-image: url(/img/formulario.jpg);
 }
 
@@ -50,11 +50,11 @@ body {
 
 /* MEDIA QUERIES  MOBILE*/
 @media only screen and (max-width: 732px) {
-    #index,
-    #nosotros,
-    #recursos,
-    #clientes,
-    #formulario {
+    .home,
+    .nosotros,
+    .recursos,
+    .clientes,
+    .formulario {
         background: linear-gradient(to right, #4b6cb7, #182848);
         /* background: linear-gradient(to left, rgb(28, 43, 73), #647daf); */
     }
@@ -217,17 +217,21 @@ main {
     margin-left: 10%;
 }
 
-.index,
-.nosotros,
+/* Titulos */
+.indexTitle,
+.nosotrosTitle,
 .recursosA,
-.clientes,
-.formulario {
-    text-align: start;
+.clientesTitle,
+.formularioTitle {
+    text-align: center;
     font-size: 10vh;
     font-family: Lora;
     font-weight: 600;
     color: #185669;
     text-shadow: 1px 1px #c5c3c0;
+}
+.principal {
+    text-align: left;
 }
 
 .primario p,
@@ -260,13 +264,20 @@ main {
     margin: 10% 0 8% 0;
 }
 
-.terceario a,
 .producto a {
-    color: #ffffff;
+    color: #fff;
     background-color: #255c81;
     padding: 10px 10px;
     border: 0.5px solid rgb(37, 92, 129);
     text-decoration: none;
+}
+.terceario a {
+    color: #fff;
+    background-color: #255c81;
+    padding: 10px 10px;
+    border: 0.5px solid rgb(37, 92, 129);
+    text-decoration: none;
+    font-size: x-large;
 }
 
 /* FOOTER */
@@ -378,7 +389,7 @@ fieldset {
     border-style: none;
 }
 legend {
-    text-align: start;
+    text-align: left;
     color: #185669;
     text-shadow: 1px 1px #c5c3c0;
     font-size: 25px;
@@ -386,6 +397,7 @@ legend {
 }
 
 .select {
+    text-align: left;
     margin: 2% 0;
     font-size: 2.5vh;
     color: #fff;
@@ -405,18 +417,26 @@ label {
     display: block;
     margin-top: 4%;
 }
-input,
-textarea {
+
+.textarea {
+    text-align: left;
     font-family: Lora;
     font-weight: bold;
-    color: #fff;
+    color: rgb(19, 1, 1);
     margin: 2% 0 2% 0;
-    opacity: 0.3;
+    opacity: 0.4;
+}
+.input {
+    font-size: medium;
+    text-align: left;
+    color: #fff;
+    margin: 1%;
 }
 
 form a,
 .enviar,
 .limpiar {
+  text-align: left;
     font-family: Lora;
     font-size: small;
     font-weight: bold;

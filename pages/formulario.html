@@ -51,18 +51,20 @@
                       </div>
                 </nav>
         </header>
-        <main id="formulario">
+        <main class="formulario">
             <div>
-                <h1 class="formulario">Ponete en contacto con nosotros</h1>
+                <h1 class="formularioTitle">Ponete en contacto con nosotros</h1>
             </div>
             <form class="form">
                 <legend>Categorias</legend>
-                <select name="aplicacion" id="" class="select">
+                <div class="select">
+                <select name="aplicacion">
                     <option value="industria">Industria 4.0</option>
                     <option value="hogar">Domotica</option>
                     <option value="campo">Agroindustria</option>
                     <option value="logistica">Logistica</option>
                 </select>
+              </div>
                 <fieldset>
                     <table>
                         <tr>
@@ -96,11 +98,14 @@
                             </td>
                         </tr>
                     </table>
-                    <textarea name="Mensage" id="" cols="35" rows="10">
-Mensage</textarea
+                    <div class="textarea">
+                    <textarea name="Mensage" class="textarea" cols="35" rows="10">
+Mensaje</textarea
                     >
-                    <div>
+                  </div>
+                    <div class="input">
                         <input
+                            class="input"
                             type="checkbox"
                             name="acepta"
                             id=""
@@ -111,8 +116,6 @@ Mensage</textarea
                     <div class="submit">
                     <tr>
                         <td>
-                            <!-- <input type="submit" />
-                            <input type="reset" /> -->
                             <a class="enviar" href="">Enviar Consulta</a>
                             <a class="limpiar" href="">Limpiar</a>
                         </td>
